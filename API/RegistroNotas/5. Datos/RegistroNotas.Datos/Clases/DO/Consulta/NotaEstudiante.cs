@@ -4,6 +4,6 @@
     {
         public string NombreAlumno { get; set; }
         public string NombreMateria { get; set; }
-        public decimal? Nota { get; set; }
+        public decimal? Calificacion { get; set; }
     }
 }

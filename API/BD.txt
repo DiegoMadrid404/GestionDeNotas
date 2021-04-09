@@ -48,7 +48,7 @@ CREATE TABLE [dbo].[Nota](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[IdAlumno] [int] NOT NULL,
 	[IdMateria] [int] NOT NULL,
-	[Nota] [decimal](2, 1) NULL	
+	[Calificacion][decimal](2, 1) NULL	
  CONSTRAINT [PK_Nota_Id] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

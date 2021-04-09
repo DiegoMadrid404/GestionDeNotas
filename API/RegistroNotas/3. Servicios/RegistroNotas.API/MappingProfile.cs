@@ -9,6 +9,7 @@
         {
             CreateMap<AlumnoModel, IAlumnoDTO>().ReverseMap();
             CreateMap<MateriaModel, IMateriaDTO>().ReverseMap();
+            CreateMap<NotaModel, INotaDTO>().ReverseMap();
         }
     }
 }

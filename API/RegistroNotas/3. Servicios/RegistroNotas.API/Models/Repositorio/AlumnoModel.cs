@@ -9,8 +9,8 @@
         public string Nombres { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
-        public string DocumentoIdentificacion { get; set; }
-        //[RegularExpression(@"/^[^\s@]+@[^\s@]+\.[^\s@]+$/", ErrorMessage = "Correo no valido")]
+        [Required(ErrorMessage = "El Campo Documento de Identificacion es Obligatorio")]
+        public string DocumentoIdentificacion { get; set; } 
         [EmailAddress(ErrorMessage = "Correo no valido") ]
         public string Email { get; set; }
     }

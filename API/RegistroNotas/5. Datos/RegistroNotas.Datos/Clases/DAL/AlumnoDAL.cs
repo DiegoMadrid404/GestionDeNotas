@@ -71,8 +71,7 @@
                 repositorio.Eliminar(alumnoDO);
                 repositorio.Guardar();
             }
-            return BuscarTodosAlumno();
-            return BuscarTodosAlumno();
+            return BuscarTodosAlumno(); 
         }
         public List<IAlumnoDTO> BuscarTodosAlumno()
         {
