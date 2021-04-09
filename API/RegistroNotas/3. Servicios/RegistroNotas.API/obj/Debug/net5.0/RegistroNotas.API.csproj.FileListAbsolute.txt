@@ -64,9 +64,16 @@ D:\Personal\RegistroNotas\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug
 D:\Personal\RegistroNotas\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Personal\RegistroNotas\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Personal\RegistroNotas\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.csprojAssemblyReference.cache
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.AssemblyInfoInputs.cache
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.AssemblyInfo.cs
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\libman.json
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\appsettings.json
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\libman.json
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.API.exe
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.API.deps.json
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.API.runtimeconfig.json
@@ -74,6 +81,10 @@ C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\Re
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.API.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\ref\RegistroNotas.API.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.API.pdb
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -88,6 +99,7 @@ C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\Re
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -114,13 +126,6 @@ C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\Re
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.Negocio.pdb
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.IC.pdb
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\RegistroNotas.Datos.pdb
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.csprojAssemblyReference.cache
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.AssemblyInfoInputs.cache
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.AssemblyInfo.cs
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.csproj.CoreCompileInputs.cache
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\staticwebassets\RegistroNotas.API.StaticWebAssets.Manifest.cache
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\staticwebassets\RegistroNotas.API.StaticWebAssets.xml
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\scopedcss\bundle\RegistroNotas.API.styles.css
@@ -130,5 +135,3 @@ C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\Re
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\ref\RegistroNotas.API.dll
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.pdb
 C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\obj\Debug\net5.0\RegistroNotas.API.genruntimeconfig.cache
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\3. Servicios\RegistroNotas.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Recursos\**" />
+    <EmbeddedResource Remove="Recursos\**" />
+    <None Remove="Recursos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\5. Datos\RegistroNotas.Datos\RegistroNotas.Datos.csproj" />
     <ProjectReference Include="..\..\6. Interfaces Comunes\RegistroNotas.IC\RegistroNotas.IC.csproj" />
   </ItemGroup>
@@ -14,7 +20,6 @@
   <ItemGroup>
     <Folder Include="Clases\BO\Consulta\" />
     <Folder Include="Clases\BO\Negocio\" />
-    <Folder Include="Recursos\" />
   </ItemGroup>
 
 </Project>

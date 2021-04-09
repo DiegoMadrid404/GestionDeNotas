@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using RegistroNotas.API.Models.Repositorio;
+using RegistroNotas.Core.Clases.BL;
 using RegistroNotas.IC.DTO.Repositorio;
-using RegistroNotas.Negocio.Clases.BL;
+
+using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -49,26 +47,29 @@ namespace RegistroNotas.API.Controllers
 
         // POST api/<AlumnoController>
         [HttpPost]
-        public AlumnoModel Post([FromBody] AlumnoModel alumno)
+        public List<AlumnoModel> Post([FromBody] AlumnoModel alumno)
         {
-            IAlumnoDTO alumnoBO = negocioAlumno.AgregarAlumno(alumno);
-            var response = _mapper.Map<AlumnoModel>(alumnoBO);
+            List<IAlumnoDTO> alumnoBO = negocioAlumno.AgregarAlumno(alumno);
+            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
             return response;
         }
 
         // PUT api/<AlumnoController>/5
         [HttpPut]
-        public AlumnoModel Put(int id, [FromBody] AlumnoModel alumno)
+        public List<AlumnoModel> Put([FromBody] AlumnoModel alumno)
         {
-            IAlumnoDTO alumnoBO = negocioAlumno.AgregarAlumno(alumno);
-            var response = _mapper.Map<AlumnoModel>(alumnoBO);
+            List<IAlumnoDTO> alumnoBO = negocioAlumno.EditarAlumno(alumno);
+            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
             return response;
         }
 
         // DELETE api/<AlumnoController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public List<AlumnoModel> Delete(int id)
         {
+            List<IAlumnoDTO> alumnoBO = negocioAlumno.EliminarAlumno(id);
+            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
+            return response;
         }
     }
 }
