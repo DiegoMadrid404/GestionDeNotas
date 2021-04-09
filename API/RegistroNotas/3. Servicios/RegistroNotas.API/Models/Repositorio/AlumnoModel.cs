@@ -11,6 +11,7 @@
         public string SegundoApellido { get; set; }
         public string DocumentoIdentificacion { get; set; }
         //[RegularExpression(@"/^[^\s@]+@[^\s@]+\.[^\s@]+$/", ErrorMessage = "Correo no valido")]
+        [EmailAddress(ErrorMessage = "Correo no valido") ]
         public string Email { get; set; }
     }
 }
