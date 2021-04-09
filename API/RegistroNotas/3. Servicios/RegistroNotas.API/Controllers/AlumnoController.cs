@@ -12,63 +12,63 @@ namespace RegistroNotas.API.Controllers
 {
 
 
-    [Route("api/Alumno")]
+    [Route("api/Materia")]
     [ApiController]
-    public class AlumnoController : ControllerBase
+    public class MateriaController : ControllerBase
     {
         private readonly IMapper _mapper;
 
-        public AlumnoController(IMapper mapper)
+        public MateriaController(IMapper mapper)
         {
             _mapper = mapper;
         }
 
-        private AlumnoBL negocioAlumno = new AlumnoBL();
+        private MateriaBL negocioMateria = new MateriaBL();
 
 
-        // GET: api/<AlumnoController>
+        // GET: api/<MateriaController>
         [HttpGet]
-        public List<AlumnoModel> Get()
+        public List<MateriaModel> Get()
         {
-            List<IAlumnoDTO> alumnoBO = negocioAlumno.BuscarTodosAlumno();
-            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
+            List<IMateriaDTO> MateriaBO = negocioMateria.BuscarTodosMateria();
+            var response = _mapper.Map<List<MateriaModel>>(MateriaBO);
             return response;
 
         }
 
-        // GET api/<AlumnoController>/5
+        // GET api/<MateriaController>/5
         [HttpGet("{id}")]
-        public AlumnoModel Get(int id)
+        public MateriaModel Get(int id)
         {
-            IAlumnoDTO alumnoBO = negocioAlumno.ConsultarPorIdAlumno(id);
-            var response = _mapper.Map<AlumnoModel>(alumnoBO);
+            IMateriaDTO MateriaBO = negocioMateria.ConsultarPorIdMateria(id);
+            var response = _mapper.Map<MateriaModel>(MateriaBO);
             return response;
         }
 
-        // POST api/<AlumnoController>
+        // POST api/<MateriaController>
         [HttpPost]
-        public List<AlumnoModel> Post([FromBody] AlumnoModel alumno)
+        public List<MateriaModel> Post([FromBody] MateriaModel Materia)
         {
-            List<IAlumnoDTO> alumnoBO = negocioAlumno.AgregarAlumno(alumno);
-            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
+            List<IMateriaDTO> MateriaBO = negocioMateria.AgregarMateria(Materia);
+            var response = _mapper.Map<List<MateriaModel>>(MateriaBO);
             return response;
         }
 
-        // PUT api/<AlumnoController>/5
+        // PUT api/<MateriaController>/5
         [HttpPut]
-        public List<AlumnoModel> Put([FromBody] AlumnoModel alumno)
+        public List<MateriaModel> Put([FromBody] MateriaModel Materia)
         {
-            List<IAlumnoDTO> alumnoBO = negocioAlumno.EditarAlumno(alumno);
-            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
+            List<IMateriaDTO> MateriaBO = negocioMateria.EditarMateria(Materia);
+            var response = _mapper.Map<List<MateriaModel>>(MateriaBO);
             return response;
         }
 
-        // DELETE api/<AlumnoController>/5
+        // DELETE api/<MateriaController>/5
         [HttpDelete("{id}")]
-        public List<AlumnoModel> Delete(int id)
+        public List<MateriaModel> Delete(int id)
         {
-            List<IAlumnoDTO> alumnoBO = negocioAlumno.EliminarAlumno(id);
-            var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
+            List<IMateriaDTO> MateriaBO = negocioMateria.EliminarMateria(id);
+            var response = _mapper.Map<List<MateriaModel>>(MateriaBO);
             return response;
         }
     }

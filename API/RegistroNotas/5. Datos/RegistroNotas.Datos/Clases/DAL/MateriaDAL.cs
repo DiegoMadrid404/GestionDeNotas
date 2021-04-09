@@ -4,93 +4,84 @@ using System.Linq;
 
 namespace RegistroNotas.Datos.Clases.DAL
 {
-    public class AlumnoDAL
+    public class MateriaDAL
     {
-        private RepositorioGenerico<Alumno> repositorio;
+        private RepositorioGenerico<Materia> repositorio;
         private RegistronotasContext context;
 
-        public AlumnoDAL()
+        public MateriaDAL()
         {
             this.context = new RegistronotasContext();
-            this.repositorio = new RepositorioGenerico<Alumno>(context);
+            this.repositorio = new RepositorioGenerico<Materia>(context);
         }
 
 
-        public IAlumnoDTO ConsultarPorIdAlumno(int id)
+        public IMateriaDTO ConsultarPorIdMateria(int id)
         {
             using (context = new RegistronotasContext())
             {
-                var alumno = context.Alumno.Where(p => p.Id == id).FirstOrDefault();
-                return alumno;
+                var Materia = context.Materia.Where(p => p.Id == id).FirstOrDefault();
+                return Materia;
             }
         }
 
-        public List<IAlumnoDTO> AgregarAlumno(IAlumnoDTO alumno)
+        public List<IMateriaDTO> AgregarMateria(IMateriaDTO Materia)
         {
-            Alumno alumnoDO = new Alumno()
+            Materia MateriaDO = new Materia()
             {
-                Email = alumno.Email,
-                Nombres = alumno.Nombres,
-                DocumentoIdentificacion = alumno.DocumentoIdentificacion,
-                PrimerApellido = alumno.PrimerApellido,
-                SegundoApellido = alumno.SegundoApellido
+                Codigo = Materia.Codigo,
+                Nombre = Materia.Nombre             
             };
 
             using (context = new RegistronotasContext())
             {
-                repositorio.Agregar(alumnoDO);
+                repositorio.Agregar(MateriaDO);
                 repositorio.Guardar();
             }
 
-            return BuscarTodosAlumno();
+            return BuscarTodosMateria();
         }
-        public List<IAlumnoDTO> EditarAlumno(IAlumnoDTO alumno)
+        public List<IMateriaDTO> EditarMateria(IMateriaDTO Materia)
         {
-            Alumno alumnoDO = new Alumno()
+            Materia MateriaDO = new Materia()
             {
-                Id = alumno.Id,
-                Email = alumno.Email,
-                Nombres = alumno.Nombres,
-                DocumentoIdentificacion = alumno.DocumentoIdentificacion,
-                PrimerApellido = alumno.PrimerApellido,
-                SegundoApellido = alumno.SegundoApellido
+                Id = Materia.Id,
+                Codigo = Materia.Codigo,
+                Nombre = Materia.Nombre
             };
 
             using (context = new RegistronotasContext())
             {
-                repositorio.Editar(alumnoDO);
+                repositorio.Editar(MateriaDO);
                 repositorio.Guardar();
             }
 
-            return BuscarTodosAlumno();
+            return BuscarTodosMateria();
         }
-        public List<IAlumnoDTO> EliminarAlumno(IAlumnoDTO alumno)
+        public List<IMateriaDTO> EliminarMateria(IMateriaDTO Materia)
         {
-            Alumno alumnoDO = new Alumno()
+            Materia MateriaDO = new Materia()
             {
-                Id = alumno.Id,
-                Email = alumno.Email,
-                Nombres = alumno.Nombres,
-                DocumentoIdentificacion = alumno.DocumentoIdentificacion,
-                PrimerApellido = alumno.PrimerApellido,
-                SegundoApellido = alumno.SegundoApellido
+                Id = Materia.Id,
+                Codigo = Materia.Codigo,
+                Nombre = Materia.Nombre
             };
 
             using (context = new RegistronotasContext())
             {
-                repositorio.Eliminar(alumnoDO);
+                repositorio.Eliminar(MateriaDO);
                 repositorio.Guardar();
             }
 
-            return BuscarTodosAlumno();
+            return BuscarTodosMateria();
         }
-        public List<IAlumnoDTO> BuscarTodosAlumno()
+        public List<IMateriaDTO> BuscarTodosMateria()
         {
             using (context = new RegistronotasContext())
             {
-                IQueryable<IAlumnoDTO> Alumno = repositorio.BuscarTodos();
+                IQueryable<IMateriaDTO> Materia = repositorio.BuscarTodos();
 
-                return Alumno.ToList();
+                return Materia.ToList();
             }
         }
 

@@ -9,6 +9,7 @@ namespace RegistroNotas.API
         public MappingProfile()
         {
             CreateMap<AlumnoModel, IAlumnoDTO>().ReverseMap();
+            CreateMap<MateriaModel, IMateriaDTO>().ReverseMap();
         }
     }
 }

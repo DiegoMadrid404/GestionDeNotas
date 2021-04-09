@@ -1,7 +1,7 @@
 ﻿namespace RegistroNotas.API.Models.Repositorio
 {
-    using System.ComponentModel.DataAnnotations;
     using RegistroNotas.IC.DTO.Repositorio;
+    using System.ComponentModel.DataAnnotations;
 
     public class AlumnoModel : IAlumnoDTO
     {
