@@ -91,6 +91,7 @@
         {
             using (context = new RegistronotasContext())
             {
+
                 IQueryable<INotaPromedioDTO> consultaNotaPromedio = (from nota in context.Nota
                                                                      join alumno in context.Alumno on nota.IdAlumno equals alumno.Id
                                                                      join materia in context.Materia on nota.IdMateria equals materia.Id
@@ -98,8 +99,8 @@
                                                                      {
                                                                          Estudiante = alumno.Nombres,
                                                                          Materia = materia.Nombre,
-                                                                         Calificacion = nota.Calificacion
-                                                                     });
+                                                                         Calificacion = context.Nota.Where(x => x.IdAlumno == alumno.Id && x.IdMateria == materia.Id).Average(a => a.Calificacion)
+                                                                     }).Distinct();
                 return consultaNotaPromedio.ToList();
             }
         }

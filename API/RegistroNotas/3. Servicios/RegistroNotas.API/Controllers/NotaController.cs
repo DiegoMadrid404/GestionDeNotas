@@ -19,14 +19,14 @@
         }
         private NotaBL negocioNota = new NotaBL();
 
-        //// GET: api/<NotaController>
-        //[HttpGet]
-        //public List<NotaModel> Get()
-        //{
-        //    List<INotaDTO> NotaBO = negocioNota.BuscarTodosNota();
-        //    var response = _mapper.Map<List<NotaModel>>(NotaBO);
-        //    return response;
-        //}
+        // GET: api/<NotaController>
+        [HttpGet]
+        public List<NotaModel> Get()
+        {
+            List<INotaDTO> NotaBO = negocioNota.BuscarTodosNota();
+            var response = _mapper.Map<List<NotaModel>>(NotaBO);
+            return response;
+        }
 
 
         // GET api/<NotaController>/5
@@ -63,6 +63,7 @@
         }
         // GETNotaPromedio: api/<NotaController>
         [HttpGet]
+        [Route("/GETNotaPromedio")]
         public List<NotaPromedioModel> GETNotaPromedio()
         {
             List<INotaPromedioDTO> NotaBO = negocioNota.ConsultarPromedioNota();
