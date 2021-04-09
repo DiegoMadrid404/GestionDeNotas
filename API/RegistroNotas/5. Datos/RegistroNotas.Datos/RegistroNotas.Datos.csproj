@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>RegistroNotas.Datos</AssemblyName>
+    <RootNamespace>RegistroNotas.Datos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>    
+    <ProjectReference Include="..\..\6. Interfaces Comunes\RegistroNotas.IC\RegistroNotas.IC.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Clases\DO\Negocio\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+  </ItemGroup>
+
+</Project>

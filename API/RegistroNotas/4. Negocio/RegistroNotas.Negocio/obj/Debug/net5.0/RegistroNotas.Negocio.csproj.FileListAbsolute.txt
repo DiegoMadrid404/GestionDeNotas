@@ -1,0 +1,34 @@
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Negocio.deps.json
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Negocio.dll
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\ref\RegistroNotas.Negocio.dll
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Negocio.pdb
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Datos.dll
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.IC.dll
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Datos.pdb
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.IC.pdb
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.csprojAssemblyReference.cache
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.AssemblyInfoInputs.cache
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.AssemblyInfo.cs
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.csproj.CoreCompileInputs.cache
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.csproj.CopyComplete
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.dll
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\ref\RegistroNotas.Negocio.dll
+D:\Personal\RegistroNotas\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.pdb
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Negocio.deps.json
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Negocio.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\ref\RegistroNotas.Negocio.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Negocio.pdb
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Datos.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.IC.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.Datos.pdb
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\bin\Debug\net5.0\RegistroNotas.IC.pdb
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.csprojAssemblyReference.cache
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.AssemblyInfoInputs.cache
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.AssemblyInfo.cs
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.csproj.CopyComplete
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\ref\RegistroNotas.Negocio.dll
+C:\Users\diego\Desktop\DIEGO\REPOSITORIES\Gestion de notas\GestionDeNotas\API\RegistroNotas\4. Negocio\RegistroNotas.Negocio\obj\Debug\net5.0\RegistroNotas.Negocio.pdb

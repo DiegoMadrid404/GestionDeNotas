@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Personal\\RegistroNotas\\RegistroNotas\\7. Proxy Externo\\RegistroNotas.ProxyExterno\\RegistroNotas.ProxyExterno.csproj": {}
+  },
+  "projects": {
+    "D:\\Personal\\RegistroNotas\\RegistroNotas\\6. Interfaces Comunes\\RegistroNotas.IC\\RegistroNotas.IC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal\\RegistroNotas\\RegistroNotas\\6. Interfaces Comunes\\RegistroNotas.IC\\RegistroNotas.IC.csproj",
+        "projectName": "RegistroNotas.IC",
+        "projectPath": "D:\\Personal\\RegistroNotas\\RegistroNotas\\6. Interfaces Comunes\\RegistroNotas.IC\\RegistroNotas.IC.csproj",
+        "packagesPath": "C:\\Users\\Camilo.Prieto\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal\\RegistroNotas\\RegistroNotas\\6. Interfaces Comunes\\RegistroNotas.IC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Camilo.Prieto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://developer.infotracktest.com/Nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Personal\\RegistroNotas\\RegistroNotas\\7. Proxy Externo\\RegistroNotas.ProxyExterno\\RegistroNotas.ProxyExterno.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal\\RegistroNotas\\RegistroNotas\\7. Proxy Externo\\RegistroNotas.ProxyExterno\\RegistroNotas.ProxyExterno.csproj",
+        "projectName": "RegistroNotas.ProxyExterno",
+        "projectPath": "D:\\Personal\\RegistroNotas\\RegistroNotas\\7. Proxy Externo\\RegistroNotas.ProxyExterno\\RegistroNotas.ProxyExterno.csproj",
+        "packagesPath": "C:\\Users\\Camilo.Prieto\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal\\RegistroNotas\\RegistroNotas\\7. Proxy Externo\\RegistroNotas.ProxyExterno\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Camilo.Prieto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://developer.infotracktest.com/Nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Personal\\RegistroNotas\\RegistroNotas\\6. Interfaces Comunes\\RegistroNotas.IC\\RegistroNotas.IC.csproj": {
+                "projectPath": "D:\\Personal\\RegistroNotas\\RegistroNotas\\6. Interfaces Comunes\\RegistroNotas.IC\\RegistroNotas.IC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
