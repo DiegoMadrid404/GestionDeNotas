@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Clases\BO\Repositorio\**" />
     <Compile Remove="Recursos\**" />
+    <EmbeddedResource Remove="Clases\BO\Repositorio\**" />
     <EmbeddedResource Remove="Recursos\**" />
+    <None Remove="Clases\BO\Repositorio\**" />
     <None Remove="Recursos\**" />
   </ItemGroup>
 
@@ -18,7 +21,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Clases\BO\Consulta\" />
     <Folder Include="Clases\BO\Negocio\" />
   </ItemGroup>
 

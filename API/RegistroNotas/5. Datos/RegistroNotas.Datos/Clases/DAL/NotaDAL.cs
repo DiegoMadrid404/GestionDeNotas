@@ -1,6 +1,6 @@
 ﻿namespace RegistroNotas.Datos.Clases.DAL
 {
-    using RegistroNotas.Datos.Clases.DO.Consulta;
+    using RegistroNotas.IC.DTO.Consulta;
     using RegistroNotas.IC.DTO.Repositorio;
     using System.Collections.Generic;
     using System.Linq;
@@ -9,7 +9,7 @@
 
         private RepositorioGenerico<Nota> repositorio;
         private RegistronotasContext context;
-         
+
         public NotaDAL()
         {
             this.context = new RegistronotasContext();
@@ -29,7 +29,7 @@
             {
                 IdAlumno = Nota.IdAlumno,
                 IdMateria = Nota.IdMateria,
-                Calificacion =  Nota.Calificacion
+                Calificacion = Nota.Calificacion
             };
 
             using (context = new RegistronotasContext())
@@ -62,7 +62,7 @@
         {
             Nota NotaDO = new Nota()
             {
-                Id = Nota.Id, 
+                Id = Nota.Id,
                 IdAlumno = Nota.IdAlumno,
                 IdMateria = Nota.IdMateria,
                 Calificacion = Nota.Calificacion
@@ -87,20 +87,20 @@
         }
 
 
-        public List<NotaEstudiante> ConsultarNotasPorAlumno()
+        public List<INotaPromedioDTO> ConsultarNotaPromedio()
         {
             using (context = new RegistronotasContext())
             {
-                List<NotaEstudiante> NotasPorEstudiante = (from nota in context.Nota
-                                                           join alumno in context.Alumno on nota.IdAlumno equals alumno.Id
-                                                           join materia in context.Materia on nota.IdMateria equals materia.Id
-                                                           select new NotaEstudiante()
-                                                           {
-                                                               NombreAlumno = alumno.Nombres,
-                                                               NombreMateria = materia.Nombre,
-                                                               Calificacion = nota.Calificacion
-                                                           }).ToList();
-                return NotasPorEstudiante;
+                IQueryable<INotaPromedioDTO> consultaNotaPromedio = (from nota in context.Nota
+                                                                     join alumno in context.Alumno on nota.IdAlumno equals alumno.Id
+                                                                     join materia in context.Materia on nota.IdMateria equals materia.Id
+                                                                     select new NotaPromedio()
+                                                                     {
+                                                                         Estudiante = alumno.Nombres,
+                                                                         Materia = materia.Nombre,
+                                                                         Calificacion = nota.Calificacion
+                                                                     });
+                return consultaNotaPromedio.ToList();
             }
         }
         public Nota GuardarServicio(Nota nota)

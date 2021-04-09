@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Acciones\" />
-    <Folder Include="DTO\Consulta\" />
     <Folder Include="DTO\Negocio\" />
     <Folder Include="Enumeraciones\" />
   </ItemGroup>

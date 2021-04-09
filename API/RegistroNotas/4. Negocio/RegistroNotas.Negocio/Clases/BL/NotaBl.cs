@@ -2,11 +2,14 @@
 {
     using RegistroNotas.Core.Clases.Excepciones;
     using RegistroNotas.Datos.Clases.DAL;
+    using RegistroNotas.Datos.Clases.DO.Consulta;
+    using RegistroNotas.IC.DTO.Consulta;
     using RegistroNotas.IC.DTO.Repositorio;
     using System.Collections.Generic;
     using System.Transactions;
     public class NotaBL
     {
+        
         private NotaDAL NotaDatos = new NotaDAL();
         public List<INotaDTO> AgregarNota(INotaDTO Nota)
         {
@@ -68,6 +71,14 @@
                 return NotaDO;
             }
         }
-
+        public List<INotaPromedioDTO> ConsultarPromedioNota()
+        {
+            using (TransactionScope transactionScope = new TransactionScope())
+            {
+                var notasPromedio = NotaDatos.ConsultarNotaPromedio();
+                transactionScope.Complete();
+                return notasPromedio;
+            }
+        }
     }
 }
