@@ -1,14 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using RegistroNotas.Datos.Clases.DO.Consulta;
-
-namespace RegistroNotas.Datos.Clases.DAL
+﻿namespace RegistroNotas.Datos.Clases.DAL
 {
+    using RegistroNotas.Datos.Clases.DO.Consulta;
+    using System.Collections.Generic;
+    using System.Linq;
     public class NotasDAL
     {
         private RepositorioGenerico<Nota> repositorio;
         private RegistronotasContext context;
-
         public List<NotaEstudiante> ConsultarNotasPorAlumno()
         {
             using (context = new RegistronotasContext())
@@ -22,11 +20,9 @@ namespace RegistroNotas.Datos.Clases.DAL
                                                                NombreMateria = materia.Nombre,
                                                                Nota = nota.Nota1
                                                            }).ToList();
-
                 return NotasPorEstudiante;
             }
         }
-
         public Nota GuardarServicio(Nota nota)
         {
             using (context = new RegistronotasContext())

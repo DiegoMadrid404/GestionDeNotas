@@ -1,21 +1,17 @@
-﻿using RegistroNotas.IC.DTO.Repositorio;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace RegistroNotas.Datos.Clases.DAL
+﻿namespace RegistroNotas.Datos.Clases.DAL
 {
+    using RegistroNotas.IC.DTO.Repositorio;
+    using System.Collections.Generic;
+    using System.Linq;
     public class MateriaDAL
     {
         private RepositorioGenerico<Materia> repositorio;
         private RegistronotasContext context;
-
         public MateriaDAL()
         {
             this.context = new RegistronotasContext();
             this.repositorio = new RepositorioGenerico<Materia>(context);
         }
-
-
         public IMateriaDTO ConsultarPorIdMateria(int id)
         {
             using (context = new RegistronotasContext())
@@ -24,13 +20,12 @@ namespace RegistroNotas.Datos.Clases.DAL
                 return Materia;
             }
         }
-
         public List<IMateriaDTO> AgregarMateria(IMateriaDTO Materia)
         {
             Materia MateriaDO = new Materia()
             {
                 Codigo = Materia.Codigo,
-                Nombre = Materia.Nombre             
+                Nombre = Materia.Nombre
             };
 
             using (context = new RegistronotasContext())
@@ -84,7 +79,5 @@ namespace RegistroNotas.Datos.Clases.DAL
                 return Materia.ToList();
             }
         }
-
-
     }
 }

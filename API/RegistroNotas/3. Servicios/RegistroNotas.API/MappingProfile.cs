@@ -1,10 +1,9 @@
-﻿using AutoMapper;
-using RegistroNotas.API.Models.Repositorio;
-using RegistroNotas.IC.DTO.Repositorio;
-
-namespace RegistroNotas.API
+﻿namespace RegistroNotas.API
 {
-    internal class MappingProfile:Profile
+    using AutoMapper;
+    using RegistroNotas.API.Models.Repositorio;
+    using RegistroNotas.IC.DTO.Repositorio;
+    internal class MappingProfile : Profile
     {
         public MappingProfile()
         {

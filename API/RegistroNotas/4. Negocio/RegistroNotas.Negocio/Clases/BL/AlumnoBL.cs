@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Transactions;
-using RegistroNotas.Core.Clases.Excepciones;
-using RegistroNotas.Datos.Clases.DAL;
-using RegistroNotas.IC.DTO.Repositorio;
-
-namespace RegistroNotas.Core.Clases.BL
+﻿namespace RegistroNotas.Core.Clases.BL
 {
+    using RegistroNotas.Core.Clases.Excepciones;
+    using RegistroNotas.Datos.Clases.DAL;
+    using RegistroNotas.IC.DTO.Repositorio;
+    using System.Collections.Generic;
+    using System.Transactions;
     public class AlumnoBL
     {
         private AlumnoDAL alumnoDatos = new AlumnoDAL();
-
         public List<IAlumnoDTO> AgregarAlumno(IAlumnoDTO alumno)
         {
             using (TransactionScope transactionScope = new TransactionScope())
@@ -52,8 +50,6 @@ namespace RegistroNotas.Core.Clases.BL
                 }
             }
         }
-
-       
         public List<IAlumnoDTO> BuscarTodosAlumno()
         {
             using (TransactionScope transactionScope = new TransactionScope())
@@ -63,7 +59,6 @@ namespace RegistroNotas.Core.Clases.BL
                 return alumnoDO;
             }
         }
-
         public IAlumnoDTO ConsultarPorIdAlumno(int id)
         {
             using (TransactionScope transactionScope = new TransactionScope())
@@ -73,6 +68,5 @@ namespace RegistroNotas.Core.Clases.BL
                 return alumnoDO;
             }
         }
-
     }
 }

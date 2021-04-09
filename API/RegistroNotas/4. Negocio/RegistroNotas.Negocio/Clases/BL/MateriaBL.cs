@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Transactions;
-using RegistroNotas.Core.Clases.Excepciones;
-using RegistroNotas.Datos.Clases.DAL;
-using RegistroNotas.IC.DTO.Repositorio;
-
-namespace RegistroNotas.Core.Clases.BL
+﻿namespace RegistroNotas.Core.Clases.BL
 {
+    using RegistroNotas.Core.Clases.Excepciones;
+    using RegistroNotas.Datos.Clases.DAL;
+    using RegistroNotas.IC.DTO.Repositorio;
+    using System.Collections.Generic;
+    using System.Transactions;
     public class MateriaBL
     {
         private MateriaDAL MateriaDatos = new MateriaDAL();
-
         public List<IMateriaDTO> AgregarMateria(IMateriaDTO Materia)
         {
             using (TransactionScope transactionScope = new TransactionScope())
@@ -52,8 +50,6 @@ namespace RegistroNotas.Core.Clases.BL
                 }
             }
         }
-
-       
         public List<IMateriaDTO> BuscarTodosMateria()
         {
             using (TransactionScope transactionScope = new TransactionScope())
@@ -63,7 +59,6 @@ namespace RegistroNotas.Core.Clases.BL
                 return MateriaDO;
             }
         }
-
         public IMateriaDTO ConsultarPorIdMateria(int id)
         {
             using (TransactionScope transactionScope = new TransactionScope())

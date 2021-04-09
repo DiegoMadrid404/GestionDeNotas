@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using RegistroNotas.Core.Clases.Excepciones;
-using System.Net;
-
-namespace SocialMedia.Infrastructure.Filters
+﻿namespace SocialMedia.Infrastructure.Filters
 {
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Filters;
+    using RegistroNotas.Core.Clases.Excepciones;
+    using System.Net;
     public class GlobalExceptionFilter : IExceptionFilter
     {
         public void OnException(ExceptionContext context)

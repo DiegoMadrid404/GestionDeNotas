@@ -1,7 +1,6 @@
 ﻿namespace RegistroNotas.Negocio.Clases.BO.Repositorio
 {
     using RegistroNotas.IC.DTO.Repositorio;
-
     public class AlumnoBO : IAlumnoDTO
     {
         public int Id { get; set; }

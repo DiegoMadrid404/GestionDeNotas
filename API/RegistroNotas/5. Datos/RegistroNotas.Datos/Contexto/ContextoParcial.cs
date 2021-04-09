@@ -1,7 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace RegistroNotas.Datos
+﻿namespace RegistroNotas.Datos
 {
+    using Microsoft.EntityFrameworkCore;
     public partial class RegistronotasContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

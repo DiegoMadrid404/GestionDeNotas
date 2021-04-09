@@ -1,21 +1,17 @@
-﻿using RegistroNotas.IC.DTO.Repositorio;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace RegistroNotas.Datos.Clases.DAL
+﻿namespace RegistroNotas.Datos.Clases.DAL
 {
+    using RegistroNotas.IC.DTO.Repositorio;
+    using System.Collections.Generic;
+    using System.Linq;
     public class AlumnoDAL
     {
         private RepositorioGenerico<Alumno> repositorio;
         private RegistronotasContext context;
-
         public AlumnoDAL()
         {
             this.context = new RegistronotasContext();
             this.repositorio = new RepositorioGenerico<Alumno>(context);
         }
-
-
         public IAlumnoDTO ConsultarPorIdAlumno(int id)
         {
             using (context = new RegistronotasContext())
@@ -24,7 +20,6 @@ namespace RegistroNotas.Datos.Clases.DAL
                 return alumno;
             }
         }
-
         public List<IAlumnoDTO> AgregarAlumno(IAlumnoDTO alumno)
         {
             Alumno alumnoDO = new Alumno()
@@ -34,14 +29,11 @@ namespace RegistroNotas.Datos.Clases.DAL
                 DocumentoIdentificacion = alumno.DocumentoIdentificacion,
                 PrimerApellido = alumno.PrimerApellido,
                 SegundoApellido = alumno.SegundoApellido
-            };
-
-            using (context = new RegistronotasContext())
+            }; using (context = new RegistronotasContext())
             {
                 repositorio.Agregar(alumnoDO);
                 repositorio.Guardar();
             }
-
             return BuscarTodosAlumno();
         }
         public List<IAlumnoDTO> EditarAlumno(IAlumnoDTO alumno)
@@ -61,7 +53,6 @@ namespace RegistroNotas.Datos.Clases.DAL
                 repositorio.Editar(alumnoDO);
                 repositorio.Guardar();
             }
-
             return BuscarTodosAlumno();
         }
         public List<IAlumnoDTO> EliminarAlumno(IAlumnoDTO alumno)
@@ -75,13 +66,12 @@ namespace RegistroNotas.Datos.Clases.DAL
                 PrimerApellido = alumno.PrimerApellido,
                 SegundoApellido = alumno.SegundoApellido
             };
-
             using (context = new RegistronotasContext())
             {
                 repositorio.Eliminar(alumnoDO);
                 repositorio.Guardar();
             }
-
+            return BuscarTodosAlumno();
             return BuscarTodosAlumno();
         }
         public List<IAlumnoDTO> BuscarTodosAlumno()
@@ -93,7 +83,5 @@ namespace RegistroNotas.Datos.Clases.DAL
                 return Alumno.ToList();
             }
         }
-
-
     }
 }
