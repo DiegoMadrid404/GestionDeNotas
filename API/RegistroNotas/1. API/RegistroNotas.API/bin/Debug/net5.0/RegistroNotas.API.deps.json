@@ -37,8 +37,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.5",
           "Newtonsoft.Json": "13.0.1",
-          "RegistroNotas.IC": "1.0.0",
-          "RegistroNotas.Negocio": "1.0.0",
+          "RegistroNotas.DCL": "1.0.0",
           "Swashbuckle.AspNetCore": "6.1.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -1342,37 +1341,37 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "RegistroNotas.Datos/1.0.0": {
+      "RegistroNotas.CL/1.0.0": {
+        "runtime": {
+          "RegistroNotas.CL.dll": {}
+        },
+        "compile": {
+          "RegistroNotas.CL.dll": {}
+        }
+      },
+      "RegistroNotas.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
-          "RegistroNotas.IC": "1.0.0"
+          "RegistroNotas.CL": "1.0.0"
         },
         "runtime": {
-          "RegistroNotas.Datos.dll": {}
+          "RegistroNotas.DAL.dll": {}
         },
         "compile": {
-          "RegistroNotas.Datos.dll": {}
+          "RegistroNotas.DAL.dll": {}
         }
       },
-      "RegistroNotas.IC/1.0.0": {
-        "runtime": {
-          "RegistroNotas.IC.dll": {}
-        },
-        "compile": {
-          "RegistroNotas.IC.dll": {}
-        }
-      },
-      "RegistroNotas.Negocio/1.0.0": {
+      "RegistroNotas.DCL/1.0.0": {
         "dependencies": {
-          "RegistroNotas.Datos": "1.0.0",
-          "RegistroNotas.IC": "1.0.0"
+          "RegistroNotas.CL": "1.0.0",
+          "RegistroNotas.DAL": "1.0.0"
         },
         "runtime": {
-          "RegistroNotas.Negocio.dll": {}
+          "RegistroNotas.DCL.dll": {}
         },
         "compile": {
-          "RegistroNotas.Negocio.dll": {}
+          "RegistroNotas.DCL.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3776,17 +3775,17 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "RegistroNotas.Datos/1.0.0": {
+    "RegistroNotas.CL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "RegistroNotas.IC/1.0.0": {
+    "RegistroNotas.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "RegistroNotas.Negocio/1.0.0": {
+    "RegistroNotas.DCL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

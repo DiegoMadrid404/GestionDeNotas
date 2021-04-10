@@ -12,7 +12,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\2. DCL\RegistroNotas.Negocio\RegistroNotas.Negocio.csproj" />
-    <ProjectReference Include="..\..\4. CL\RegistroNotas.IC\RegistroNotas.IC.csproj" />
+    <ProjectReference Include="..\..\2. DCL\RegistroNotas.DCL\RegistroNotas.DCL.csproj" />
   </ItemGroup>
 </Project>

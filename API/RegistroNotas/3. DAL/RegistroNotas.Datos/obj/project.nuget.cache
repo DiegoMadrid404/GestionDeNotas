@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gZGd8+PM4fQtcPHokYcWY5PYJYRK0i/CaUoFSaVKCG7G+zkSYHTAFKyOgEXsvhASrDqwXwh9vXHTqVh/3yRTNA==",
+  "dgSpecHash": "9hq7m7vi9ywl+1pG8glvuDNoOmPS96h2PF8kM0WXDO5l6Y7Y+8BK6x8XMUohW8xbN6jwORK77S4VjOGt0ktyug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\RegistroNotas.Datos.csproj",
+  "projectFilePath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\RegistroNotas.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

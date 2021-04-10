@@ -1482,14 +1482,14 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RegistroNotas.IC/1.0.0": {
+      "RegistroNotas.CL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/RegistroNotas.IC.dll": {}
+          "bin/placeholder/RegistroNotas.CL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RegistroNotas.IC.dll": {}
+          "bin/placeholder/RegistroNotas.CL.dll": {}
         }
       }
     }
@@ -5689,17 +5689,17 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "RegistroNotas.IC/1.0.0": {
+    "RegistroNotas.CL/1.0.0": {
       "type": "project",
-      "path": "../../4. CL/RegistroNotas.IC/RegistroNotas.IC.csproj",
-      "msbuildProject": "../../4. CL/RegistroNotas.IC/RegistroNotas.IC.csproj"
+      "path": "../../4. CL/RegistroNotas.IC/RegistroNotas.CL.csproj",
+      "msbuildProject": "../../4. CL/RegistroNotas.IC/RegistroNotas.CL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 5.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
-      "RegistroNotas.IC >= 1.0.0"
+      "RegistroNotas.CL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5710,9 +5710,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\RegistroNotas.Datos.csproj",
-      "projectName": "RegistroNotas.Datos",
-      "projectPath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\RegistroNotas.Datos.csproj",
+      "projectUniqueName": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\RegistroNotas.DAL.csproj",
+      "projectName": "RegistroNotas.DAL",
+      "projectPath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\RegistroNotas.DAL.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\3. DAL\\RegistroNotas.Datos\\obj\\",
       "projectStyle": "PackageReference",
@@ -5737,8 +5737,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\4. CL\\RegistroNotas.IC\\RegistroNotas.IC.csproj": {
-              "projectPath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\4. CL\\RegistroNotas.IC\\RegistroNotas.IC.csproj"
+            "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\4. CL\\RegistroNotas.IC\\RegistroNotas.CL.csproj": {
+              "projectPath": "C:\\Users\\diego\\Desktop\\DIEGO\\REPOSITORIES\\Gestion de notas\\GestionDeNotas\\API\\RegistroNotas\\4. CL\\RegistroNotas.IC\\RegistroNotas.CL.csproj"
             }
           }
         }

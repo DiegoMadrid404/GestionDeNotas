@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>RegistroNotas.DCL</AssemblyName>
+    <RootNamespace>RegistroNotas.DCL</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Clases\BO\Repositorio\**" />
+    <Compile Remove="Recursos\**" />
+    <EmbeddedResource Remove="Clases\BO\Repositorio\**" />
+    <EmbeddedResource Remove="Recursos\**" />
+    <None Remove="Clases\BO\Repositorio\**" />
+    <None Remove="Recursos\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\3. DAL\RegistroNotas.Datos\RegistroNotas.DAL.csproj" />
+    <ProjectReference Include="..\..\4. CL\RegistroNotas.IC\RegistroNotas.CL.csproj" />
+  </ItemGroup>
+
+</Project>
