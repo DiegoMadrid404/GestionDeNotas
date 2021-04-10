@@ -17,7 +17,12 @@
         }
         private AlumnoBL negocioAlumno = new AlumnoBL();
 
-        // GET: api/<AlumnoController>
+        /// <summary>
+        /// Consultar todos los registro de la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpGet]
         public List<AlumnoModel> Get()
         {
@@ -25,7 +30,13 @@
             var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
             return response;
         }
-        // GET api/<AlumnoController>/5
+        /// /// <summary>
+        /// Consultar un registro especifico de la entidad
+        /// </summary>
+        ///  /// <param id="id entidad">
+        /// <returns>
+        /// Retorna el registro solicitado
+        /// </returns>
         [HttpGet("{id}")]
         public AlumnoModel Get(int id)
         {
@@ -33,7 +44,12 @@
             var response = _mapper.Map<AlumnoModel>(alumnoBO);
             return response;
         }
-        // POST api/<AlumnoController>
+        /// <summary>
+        /// Guardar registro en la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpPost]
         public List<AlumnoModel> Post([FromBody] AlumnoModel alumno)
         {
@@ -41,7 +57,12 @@
             var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
             return response;
         }
-        // PUT api/<AlumnoController>/5
+        /// <summary>
+        /// Actualizar registro en la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpPut]
         public List<AlumnoModel> Put([FromBody] AlumnoModel alumno)
         {
@@ -49,7 +70,12 @@
             var response = _mapper.Map<List<AlumnoModel>>(alumnoBO);
             return response;
         }
-        // DELETE api/<AlumnoController>/5
+        /// <summary>
+        /// Eliminar un registro especifico
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpDelete("{id}")]
         public List<AlumnoModel> Delete(int id)
         {

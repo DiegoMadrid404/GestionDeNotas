@@ -31,7 +31,7 @@
                 }
                 else
                 {
-                    throw new BusinessException($"No existe un registro de Nota con el documento {Nota.Id}");
+                    throw new BusinessException($"No existe un registro de Nota con el id {Nota.Id}");
                 }
             }
         }
@@ -48,7 +48,7 @@
                 }
                 else
                 {
-                    throw new BusinessException($"No existe un registro de Nota con el documento {id}");
+                    throw new BusinessException($"No existe un registro de Nota con el Id {id}");
                 }
             }
         }

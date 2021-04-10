@@ -41,7 +41,7 @@ namespace RegistroNotas.API
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Notas", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gestión De Notas", Version = "v1", Description="--DIEGO MADRID--" });
             });
             services.AddControllers().AddJsonOptions(opts => opts.JsonSerializerOptions.PropertyNamingPolicy = null);
         }

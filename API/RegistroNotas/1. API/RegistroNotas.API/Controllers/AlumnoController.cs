@@ -16,7 +16,13 @@
             _mapper = mapper;
         }
         private MateriaBL negocioMateria = new MateriaBL();
-        // GET: api/<MateriaController>
+
+        /// <summary>
+        /// Consultar todos los registro de la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpGet]
         public List<MateriaModel> Get()
         {
@@ -25,7 +31,13 @@
             return response;
 
         }
-        // GET api/<MateriaController>/5
+        /// /// <summary>
+        /// Consultar un registro especifico de la entidad
+        /// </summary>
+        ///  /// <param id="id entidad">
+        /// <returns>
+        /// Retorna el registro solicitado
+        /// </returns>
         [HttpGet("{id}")]
         public MateriaModel Get(int id)
         {
@@ -33,7 +45,12 @@
             var response = _mapper.Map<MateriaModel>(MateriaBO);
             return response;
         }
-        // POST api/<MateriaController>
+        /// <summary>
+        /// Guardar registro en la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpPost]
         public List<MateriaModel> Post([FromBody] MateriaModel Materia)
         {
@@ -41,7 +58,12 @@
             var response = _mapper.Map<List<MateriaModel>>(MateriaBO);
             return response;
         }
-        // PUT api/<MateriaController>/5
+        /// <summary>
+        /// Actualizar registro en la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpPut]
         public List<MateriaModel> Put([FromBody] MateriaModel Materia)
         {
@@ -49,7 +71,12 @@
             var response = _mapper.Map<List<MateriaModel>>(MateriaBO);
             return response;
         }
-        // DELETE api/<MateriaController>/5
+        /// <summary>
+        /// Eliminar un registro especifico
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpDelete("{id}")]
         public List<MateriaModel> Delete(int id)
         {

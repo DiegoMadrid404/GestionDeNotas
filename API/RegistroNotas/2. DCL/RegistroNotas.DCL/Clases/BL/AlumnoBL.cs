@@ -29,7 +29,7 @@
                 }
                 else
                 {
-                    throw new BusinessException($"No existe un registro de alumno con el documento {alumno.Id}");
+                    throw new BusinessException($"No existe un registro de alumno con el Id {alumno.Id}");
                 }
             }
         }
@@ -46,7 +46,7 @@
                 }
                 else
                 {
-                    throw new BusinessException($"No existe un registro de alumno con el documento {id}");
+                    throw new BusinessException($"No existe un registro de alumno con el Id {id}");
                 }
             }
         }

@@ -29,7 +29,7 @@
                 }
                 else
                 {
-                    throw new BusinessException($"No existe un registro de Materia con el documento {Materia.Id}");
+                    throw new BusinessException($"No existe un registro de Materia con el Id {Materia.Id}");
                 }
             }
         }
@@ -46,7 +46,7 @@
                 }
                 else
                 {
-                    throw new BusinessException($"No existe un registro de Materia con el documento {id}");
+                    throw new BusinessException($"No existe un registro de Materia con el Id {id}");
                 }
             }
         }

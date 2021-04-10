@@ -19,7 +19,12 @@
         }
         private NotaBL negocioNota = new NotaBL();
 
-        // GET: api/<NotaController>
+        /// <summary>
+        /// Consultar todos los registro de la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpGet]
         public List<NotaModel> Get()
         {
@@ -27,9 +32,13 @@
             var response = _mapper.Map<List<NotaModel>>(NotaBO);
             return response;
         }
-
-
-        // GET api/<NotaController>/5
+        /// /// <summary>
+        /// Consultar un registro especifico de la entidad
+        /// </summary>
+        ///  /// <param id="id entidad">
+        /// <returns>
+        /// Retorna el registro solicitado
+        /// </returns>
         [HttpGet("{id}")]
         public NotaModel Get(int id)
         {
@@ -37,7 +46,12 @@
             var response = _mapper.Map<NotaModel>(NotaBO);
             return response;
         }
-        // POST api/<NotaController>
+        /// <summary>
+        /// Guardar registro en la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpPost]
         public List<NotaModel> Post([FromBody] NotaModel Nota)
         {
@@ -45,7 +59,12 @@
             var response = _mapper.Map<List<NotaModel>>(NotaBO);
             return response;
         }
-        // PUT api/<NotaController>/5
+        /// <summary>
+        /// Actualizar registro en la entidad
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpPut]
         public List<NotaModel> Put([FromBody] NotaModel Nota)
         {
@@ -53,7 +72,12 @@
             var response = _mapper.Map<List<NotaModel>>(NotaBO);
             return response;
         }
-        // DELETE api/<NotaController>/5
+        /// <summary>
+        /// Eliminar un registro especifico
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros de la entidad
+        /// </returns> 
         [HttpDelete("{id}")]
         public List<NotaModel> Delete(int id)
         {
@@ -61,7 +85,12 @@
             var response = _mapper.Map<List<NotaModel>>(NotaBO);
             return response;
         }
-        // GETNotaPromedio: api/<NotaController>
+        /// <summary>
+        /// Consultar notas promedio de estudiantes por materia
+        /// </summary>
+        /// <returns>
+        /// Retorna los registros materias estudiantes y nota promedio
+        /// </returns> 
         [HttpGet]
         [Route("/GETNotaPromedio")]
         public List<NotaPromedioModel> GETNotaPromedio()
