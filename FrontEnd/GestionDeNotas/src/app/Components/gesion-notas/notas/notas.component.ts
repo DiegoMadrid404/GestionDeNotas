@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms'
+import { Notas } from 'src/app/Models/Notas';
+import { GestionNotasService } from 'src/app/Services/gestion-notas.service';
 
 @Component({
   selector: 'app-notas',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotasComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup;
+
+  constructor(private formBuilder: FormBuilder, private gestionNotasService: GestionNotasService) {
+    this.form = this.formBuilder.group({
+      id: 0,
+      materia: ['', [Validators.required]],
+      alumno: ['', [Validators.required]],
+
+      calificacion: ['', [Validators.required, Validators.pattern(/^-?\d*[.,]?\d{0,2}$/), Validators.min(0), Validators.max(5)]]
+
+    });
+  }
 
   ngOnInit(): void {
   }
+  guardarRegitro() {
 
+    const nota: Notas = {
+      IdAlumno: this.form.get('alumno').value,
+      IdMateria: this.form.get('materia').value,
+      Calificacion: this.form.get('calificacion').value,
+    }
+    this.gestionNotasService.guardarRegitro(nota).subscribe(data => {
+      console.log("Guardado Exitosamente");
+      this.form.reset();
+    })
+  }
 }
+
+

@@ -1,47 +1,31 @@
-<form>
+<form [formGroup]="form" (submit)="guardarRegitro()">
+  <!-- alumno -->
+  <hr>
   <div class="form-group">
-    <div class="input-group">
-
-      <div class="input-group-prepend">
-        <div class="input-group-text bg-white">
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
-      <select class="form-select form-select-lg mb-3" ormControlName="AlumnoNombre">
-        <option value="" selected disabled>Seleccione un alumno</option>
-        <!-- <option *ngFor="let nombre of  " [ngValue]="nombre"></option> -->
-      </select>
+    <div class="input-group btn-lg ">
+      <i class="fas fa-user btn-lg btn-block"></i>
+      <input type="text" class="form-control" formControlName="alumno" maxlength="2" placeholder="ID Alumno">
     </div>
   </div>
-
-  <div class="form-group">
+  <!-- materia -->
+  <div class="form-group btn-lg ">
     <div class="input-group">
-
-      <div class="input-group-prepend">
-        <div class="input-group-text bg-white">
-          <i class="fas fa-book"></i>
-        </div>
-      </div>
-      <select class="form-select form-select-lg mb-3" ormControlName="AlumnoNombre">
-        <option value="" selected disabled>Seleccione una materia</option>
-        <!-- <option *ngFor="let nombre of  " [ngValue]="nombre"></option> -->
-      </select>
+      <i class="fas fa-book btn-lg btn-block"></i>
+      <input type="text" class="form-control" formControlName="materia" maxlength="2" placeholder="ID Materia">
     </div>
   </div>
-
-  <div class="form-group">
+  <!-- nota -->
+  <div class="form-group btn-lg ">
     <div class="input-group">
-
-      <div class="input-group-prepend">
-        <div class="input-group-text bg-white">
-          <i class="fas fa-star"></i>
-        </div>
-      </div>
-     <input type="number" class="form-control" placeholder="Calificación">
+      <i class="fas fa-filter btn-lg btn-block"></i>
+      <input type="text" class="form-control" formControlName="calificacion" maxlength="3" placeholder="Calificación">
     </div>
   </div>
-
-  <div class="form-group text-ali">
-      <button class="btn btn-success btn-lg btn-block" type="submit">Aceptar</button>
+  <!-- boton -->
+  <hr>
+  <div class="form-group btn-lg" style="text-align: center">
+    <button class="btn btn-success btn-lg btn-block" style="width: 100%;" type="submit" [disabled]="form.invalid"> <i
+        class="fas fa-database"></i>
+      Aceptar</button>
   </div>
 </form>
