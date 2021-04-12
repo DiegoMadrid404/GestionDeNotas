@@ -35,6 +35,8 @@ export class NotasComponent implements OnInit {
     }
     this.gestionNotasService.guardarRegitro(nota).subscribe(data => {
       this.toastr.success('La calificación fue registrada','Gestión de notas');
+      this.gestionNotasService.obterNotasPromedio();
+      this.gestionNotasService.obterNotas();
       this.form.reset();
     })
   }
