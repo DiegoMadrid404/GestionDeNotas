@@ -29,9 +29,9 @@ export class NotasComponent implements OnInit {
   guardarRegitro() {
 
     const nota: Notas = {
-      IdAlumno: this.form.get('alumno').value,
-      IdMateria: this.form.get('materia').value,
-      Calificacion: this.form.get('calificacion').value,
+      idAlumno: this.form.get('alumno').value,
+      idMateria: this.form.get('materia').value,
+      calificacion: this.form.get('calificacion').value,
     }
     this.gestionNotasService.guardarRegitro(nota).subscribe(data => {
       this.toastr.success('La calificación fue registrada','Gestión de notas');

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GestionNotasService } from 'src/app/Services/gestion-notas.service';
 
 
 @Component({
@@ -9,10 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class ListaComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(public GestionNotasService: GestionNotasService) { }
 
   ngOnInit(): void {
- 
+    this.GestionNotasService.obterNotas();
   }
 
 }

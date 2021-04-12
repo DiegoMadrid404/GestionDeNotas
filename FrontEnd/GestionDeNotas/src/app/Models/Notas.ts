@@ -1,6 +1,6 @@
 export class Notas {
-    Id?: Number;
-    IdMateria: Number;
-    IdAlumno: number;
-    Calificacion: Number;
+    id?: Number;
+    idMateria: Number;
+    idAlumno: number;
+    calificacion: Number;
 }

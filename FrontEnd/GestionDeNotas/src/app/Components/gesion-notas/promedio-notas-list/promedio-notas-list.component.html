@@ -1,7 +1,20 @@
   <table id="table">
-    <tr *ngFor="let PromedioNotas of GestionNotasService.list">
+    <tr>
+      <th>Estudiante</th>
+      <th>Materia</th>
+      <th>Promedio</th>
+    </tr>
+    <tr *ngFor="let PromedioNotas of GestionNotasService.PromedioNotasList">
+
       <td>{{PromedioNotas.estudiante}}</td>
       <td>{{PromedioNotas.materia}}</td>
       <td>{{PromedioNotas.calificacion}}</td>
     </tr>
   </table>
+  <h6>
+    <br />
+    Diego Madrid
+    <br />
+    ----
+  </h6>
+  <br />

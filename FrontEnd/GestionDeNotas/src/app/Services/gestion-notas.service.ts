@@ -9,8 +9,9 @@ import { PromedioNotasList } from '../Models/PromedioNotasList';
 })
 export class GestionNotasService {
   myAppUrl = 'https://localhost:44346/';
-  myApiUrl = 'api/nota/'
-  list: PromedioNotasList[];
+  myApiUrl = 'api/nota/';
+  PromedioNotasList: PromedioNotasList[];
+  NotasList: Notas[];
 
   constructor(private http: HttpClient) { }
 
@@ -18,11 +19,16 @@ export class GestionNotasService {
     return this.http.post<Notas>(this.myAppUrl + this.myApiUrl, Notas);
   }
   obterNotasPromedio() {
-    this.http.get(this.myAppUrl + this.myApiUrl+'GETNotaPromedio').toPromise().then(
+    this.http.get(this.myAppUrl + this.myApiUrl + 'GETNotaPromedio').toPromise().then(
       data => {
-        this.list = data as PromedioNotasList[];
+        this.PromedioNotasList = data as PromedioNotasList[];
       });
   }
-
+  obterNotas() {
+    this.http.get(this.myAppUrl + this.myApiUrl).toPromise().then(
+      data => {    
+        console.log(data);
+        this.NotasList = data as Notas[];
+      });
+  }
 }
-Notas

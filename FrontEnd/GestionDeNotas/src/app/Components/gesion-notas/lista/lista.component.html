@@ -1,1 +1,12 @@
-<p>lista works!</p>
+<table id="table">
+  <tr>
+    <th>Id Estudiante</th>
+    <th>Id Materia</th>
+    <th>Calificación</th>
+  </tr>
+  <tr *ngFor="let nota of GestionNotasService.NotasList">
+    <td>{{nota.idAlumno}}</td>
+    <td>{{nota.idMateria}}</td>
+    <td>{{nota.calificacion}}</td>
+  </tr>
+</table>
