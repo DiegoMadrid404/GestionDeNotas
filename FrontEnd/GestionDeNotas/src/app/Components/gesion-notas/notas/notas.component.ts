@@ -13,7 +13,7 @@ export class NotasComponent implements OnInit {
 
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private gestionNotasService: GestionNotasService, private toastr:ToastrService) {
+  constructor(private formBuilder: FormBuilder, private gestionNotasService: GestionNotasService, private toastr: ToastrService) {
     this.form = this.formBuilder.group({
       id: 0,
       materia: ['', [Validators.required]],
@@ -27,14 +27,13 @@ export class NotasComponent implements OnInit {
   ngOnInit(): void {
   }
   guardarRegitro() {
-
     const nota: Notas = {
       idAlumno: this.form.get('alumno').value,
       idMateria: this.form.get('materia').value,
-      calificacion: this.form.get('calificacion').value,
+      calificacion: this.form.get('calificacion').value.toString().trim().replace(",", ".")
     }
     this.gestionNotasService.guardarRegitro(nota).subscribe(data => {
-      this.toastr.success('La calificación fue registrada','Gestión de notas');
+      this.toastr.success('La calificación fue registrada', 'Gestión de notas');
       this.gestionNotasService.obterNotasPromedio();
       this.gestionNotasService.obterNotas();
       this.form.reset();
