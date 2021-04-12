@@ -21,7 +21,8 @@ Requerimientos No funcionales
 
 ![image](https://user-images.githubusercontent.com/71359745/114347504-a559f580-9b2a-11eb-933e-deeae2937612.png)
 
-![image](https://user-images.githubusercontent.com/71359745/114347634-ddf9cf00-9b2a-11eb-9001-5096a54a62ef.png)
+![image](https://user-images.githubusercontent.com/71359745/114433442-732ab100-9b87-11eb-9311-86e7a9d7e3ce.png)
+
 
 
 
