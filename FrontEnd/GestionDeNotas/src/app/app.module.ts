@@ -12,6 +12,8 @@ import { NotasComponent } from './Components/gesion-notas/notas/notas.component'
 import { ListaComponent } from './Components/gesion-notas/lista/lista.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { PromedioNotasListComponent } from './Components/gesion-notas/promedio-notas-list/promedio-notas-list.component';
+import {MatSliderModule } from '@angular/material/slider';
+import {MatSelectModule} from '@angular/material/select'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PromedioNotasListComponent } from './Components/gesion-notas/promedio-n
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatSliderModule,
+    MatSelectModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms'
 import { ToastrService } from 'ngx-toastr';
+import { Alumnos } from 'src/app/Models/Alumnos';
+import {  Materias } from 'src/app/Models/Materias';
 import { Notas } from 'src/app/Models/Notas';
 import { GestionNotasService } from 'src/app/Services/gestion-notas.service';
+
+
 
 @Component({
   selector: 'app-notas',
@@ -25,7 +29,25 @@ export class NotasComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.cargarCombos();
   }
+  materiasList: Materias[];
+  alumnoList: Alumnos[];
+
+ 
+  cargarCombos() {
+
+    this.gestionNotasService.obtenerMaterias().subscribe((respuesta) => {
+      this.materiasList = respuesta;
+      console.log(respuesta);
+    });
+    this.gestionNotasService.obtenerAlumnos().subscribe((respuesta) => {
+      this.alumnoList = respuesta;
+      console.log(respuesta);
+    });
+
+  }
+
   guardarRegitro() {
     const nota: Notas = {
       idAlumno: this.form.get('alumno').value,
@@ -40,5 +62,6 @@ export class NotasComponent implements OnInit {
     })
   }
 }
+
 
 

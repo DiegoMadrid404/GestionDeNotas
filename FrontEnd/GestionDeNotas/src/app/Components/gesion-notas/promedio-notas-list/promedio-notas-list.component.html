@@ -8,7 +8,7 @@
 
       <td>{{PromedioNotas.estudiante}}</td>
       <td>{{PromedioNotas.materia}}</td>
-      <td [ngClass]="{'reprobar':PromedioNotas.calificacion<3, 'aprobar':PromedioNotas.calificacion> 4}">
+      <td [ngClass]="{'reprobar':PromedioNotas.calificacion<3, 'aprobar':PromedioNotas.calificacion> (9/2)}">
         {{PromedioNotas.calificacion}}</td>
     </tr>
   </table>

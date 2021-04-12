@@ -3,20 +3,27 @@
   <hr>
   <div class="form-group">
     <div class="input-group btn-lg ">
-      <i class="fas fa-user btn-lg btn-block"></i>
-      <input type="text" class="form-control" formControlName="alumno" maxlength="2" placeholder="ID Alumno">
-    </div>
-  </div>
-  <!-- materia -->
-  <div class="form-group btn-lg ">
-    <div class="input-group">
+      <h3><b>Alumno:</b></h3>
       <i class="fas fa-book btn-lg btn-block"></i>
-      <input type="text" class="form-control" formControlName="materia" maxlength="2" placeholder="ID Materia">
+      <select formControlName="alumno" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option *ngFor="let alumno of alumnoList" [value]="alumno.id">{{alumno.nombres}} {{alumno.primerApellido}}</option>
+      </select>
+    </div>
+  </div> 
+  <!-- materia -->
+  <div class="form-group">
+    <div class="input-group btn-lg ">
+      <h3><b>Materia:</b></h3>
+      <i class="fas fa-book btn-lg btn-block"></i>
+      <select formControlName="materia" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option *ngFor="let materia of materiasList" [value]="materia.id">{{materia.nombre}}</option>
+      </select>
     </div>
   </div>
   <!-- nota -->
-  <div class="form-group btn-lg ">
+  <div class="form-group btn-lg border" >
     <div class="input-group">
+      <h3><b>Calificación:</b></h3>
       <i class="fas fa-filter btn-lg btn-block"></i>
       <input type="text" class="form-control" formControlName="calificacion" maxlength="3" placeholder="Calificación">
     </div>
