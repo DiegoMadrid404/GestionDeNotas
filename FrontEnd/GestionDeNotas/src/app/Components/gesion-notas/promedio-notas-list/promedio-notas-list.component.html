@@ -1,1 +1,7 @@
-<p>promedio-notas-list works!</p>
+  <table id="table">
+    <tr *ngFor="let PromedioNotas of GestionNotasService.list">
+      <td>{{PromedioNotas.estudiante}}</td>
+      <td>{{PromedioNotas.materia}}</td>
+      <td>{{PromedioNotas.calificacion}}</td>
+    </tr>
+  </table>

@@ -92,7 +92,7 @@
         /// Retorna los registros materias estudiantes y nota promedio
         /// </returns> 
         [HttpGet]
-        [Route("/GETNotaPromedio")]
+        [Route("GETNotaPromedio")]
         public List<NotaPromedioModel> GETNotaPromedio()
         {
             List<INotaPromedioDTO> NotaBO = negocioNota.ConsultarPromedioNota();

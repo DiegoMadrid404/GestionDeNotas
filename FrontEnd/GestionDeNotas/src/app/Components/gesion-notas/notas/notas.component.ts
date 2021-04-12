@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms'
+import { ToastrService } from 'ngx-toastr';
 import { Notas } from 'src/app/Models/Notas';
 import { GestionNotasService } from 'src/app/Services/gestion-notas.service';
 
@@ -12,7 +13,7 @@ export class NotasComponent implements OnInit {
 
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private gestionNotasService: GestionNotasService) {
+  constructor(private formBuilder: FormBuilder, private gestionNotasService: GestionNotasService, private toastr:ToastrService) {
     this.form = this.formBuilder.group({
       id: 0,
       materia: ['', [Validators.required]],
@@ -33,7 +34,7 @@ export class NotasComponent implements OnInit {
       Calificacion: this.form.get('calificacion').value,
     }
     this.gestionNotasService.guardarRegitro(nota).subscribe(data => {
-      console.log("Guardado Exitosamente");
+      this.toastr.success('La calificación fue registrada','Gestión de notas');
       this.form.reset();
     })
   }

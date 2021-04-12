@@ -1,5 +1,5 @@
 export class PromedioNotasList {
-    Estudiante: string;
+    estudiante: string;
     materia: string;
     calificacion: number;
 }

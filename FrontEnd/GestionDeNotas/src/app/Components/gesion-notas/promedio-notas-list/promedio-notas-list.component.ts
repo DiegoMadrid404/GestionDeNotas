@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GestionNotasService } from 'src/app/Services/gestion-notas.service';
 
 @Component({
   selector: 'app-promedio-notas-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PromedioNotasListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public GestionNotasService: GestionNotasService) { }
 
   ngOnInit(): void {
+    this.GestionNotasService.obterNotasPromedio();
   }
 
 }
